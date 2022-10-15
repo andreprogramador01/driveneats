@@ -31,3 +31,21 @@ function contarSelecionados(){
         button.innerHTML = "Fechar Pedido";
     }
 }
+function fecharPedido(){
+    let itensSelecionados = document.querySelectorAll('.selecionado');
+    let total = 0;
+    let mensagem = "Olá, gostaria de fazer o pedido:\n\n";
+    itensSelecionados.forEach(function(el){
+        let valor = el.querySelector('.valor');
+        let valorTransformado = Number(valor.innerHTML.replace('R$', '').replace(",","."));
+        let nomeItem = el.className.replace('item selecionado','');
+        let nomeItemCapitalize = nomeItem[0].toUpperCase()+ nomeItem.substring(1);
+        total += valorTransformado;
+        mensagem += '- ' + nomeItemCapitalize +': '+ el.querySelector('.nome').innerHTML+'\n';
+
+        
+    });
+    mensagem += '\nTotal: R$ '+ total.toFixed(2);
+    window.open( 'https://wa.me/5573981427086?text='+encodeURIComponent(mensagem) );
+    
+}
