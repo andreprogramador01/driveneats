@@ -83,6 +83,9 @@ body{
     margin-top:5px;
     margin-bottom:13px;
 }
+.selecionado{
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
 .secao-prato{
     margin-top:92px;
 }
@@ -100,7 +103,7 @@ body{
     justify-content: center;
     align-items:center;
 }
-.secao-finalizar button{
+.secao-finalizar .button{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -112,4 +115,23 @@ body{
     border-radius: 50px;    
     color: #FFFFFF;
     margin:25px;
+}
+.button-selecionado{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.018em;
+    width: 364px;
+    height: 61px;
+    background: #32B72F;
+    border-radius: 50px;
+    border:none;
+    color:#FFFFFF;
+    cursor:pointer;
 }

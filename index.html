@@ -22,19 +22,19 @@
             Primeiro, seu prato
         </div>
         <div class="pratos itens">
-            <div class="prato item">
+            <div class="prato item" onclick="selecionarPrato(this)" >
                 <img src="media/frango.png" alt="">
                 <p class="nome">Frango Yin Yang</p>
                 <p class="descricao">Um pouco de batata, um pouco de salada</p>
                 <p class="valor">R$ 14,90</p>
             </div>
-            <div class="prato item">
+            <div class="prato item" onclick="selecionarPrato(this)">
                 <img src="media/frango.png" alt="">
                 <p class="nome">Frango Yin Yang</p>
                 <p class="descricao">Um pouco de batata, um pouco de salada</p>
                 <p class="valor">R$ 14,90</p>
             </div>
-            <div class="prato item">
+            <div class="prato item" onclick="selecionarPrato(this)">
                 <img src="media/frango.png" alt="">
                 <p class="nome">Frango Yin Yang</p>
                 <p class="descricao">Um pouco de batata, um pouco de salada</p>
@@ -48,20 +48,20 @@
             Agora, sua bebida
         </div>
         <div class="bebidas itens">
-            <div class="bebida item">
+            <div class="bebida item" onclick="selecionarBebida(this)">
                 <img src="media/coca.png" alt="">
                 <p class="nome">Coquinha gelada</p>
                 <p class="descricao">Lata 350ml</p>
                 <p class="valor">R$ 4,90</p>
             </div>
-            <div class="bebida item">
+            <div class="bebida item" onclick="selecionarBebida(this)">
                 <img src="media/coca.png" alt="">
                 <p class="nome">Coquinha gelada</p>
                 <p class="descricao">Lata 350ml</p>
                 <p class="valor">R$ 4,90</p>
             </div>
-            <div class="bebida item">
-                <img src="media/coca.png" alt="">
+            <div class="bebida item" onclick="selecionarBebida(this)"> 
+                <img src="media/coca.png"  alt="">
                 <p class="nome">Coquinha gelada</p>
                 <p class="descricao">Lata 350ml</p>
                 <p class="valor">R$ 4,90</p>
@@ -74,19 +74,19 @@
             Por fim, sua sobremesa
         </div>
         <div class="sobremesas itens">
-            <div class="sobremesa item">
+            <div class="sobremesa item" onclick="selecionarSobremesa(this)">
                 <img src="media/pudim.png" alt="">
                 <p class="nome">Pudim</p>
                 <p class="descricao">Apenas pudim</p>
                 <p class="valor">R$ 7,90</p>
             </div>
-            <div class="bebida item">
+            <div class="bebida item" onclick="selecionarSobremesa(this)">
                 <img src="media/pudim.png" alt="">
                 <p class="nome">Pudim</p>
                 <p class="descricao">Apenas pudim</p>
                 <p class="valor">R$ 7,90</p>
             </div>
-            <div class="bebida item">
+            <div class="bebida item" onclick="selecionarSobremesa(this)">
                 <img src="media/pudim.png" alt="">
                 <p class="nome">Pudim</p>
                 <p class="descricao">Apenas pudim</p>
@@ -96,9 +96,8 @@
         
     </section>
     <section class="secao-finalizar">
-        <button>Selecione os 3 itens
-            para fechar o pedido</button>
+        <button class="button">Selecione os 3 itens para fechar o pedido</button>
     </section>
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
