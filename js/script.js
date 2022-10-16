@@ -41,7 +41,7 @@ function fecharPedido(){
         let nomeItem = el.className.replace('item selecionado','');
         let nomeItemCapitalize = nomeItem[0].toUpperCase()+ nomeItem.substring(1);
         total += valorTransformado;
-        mensagem += '- ' + nomeItemCapitalize +': '+ el.querySelector('.nome').innerHTML+'\n';
+        mensagem += '- ' +  nomeItemCapitalize.trim() +': '+ el.querySelector('.nome').innerHTML+'\n';
 
         
     });
