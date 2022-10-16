@@ -1,3 +1,5 @@
+document.querySelector('button').disabled = true;
+
 function selecionarBebida(item){
     let selecionadoAnteriormente = document.querySelector('.bebidas .selecionado');
     if(selecionadoAnteriormente !== null){
@@ -29,9 +31,11 @@ function contarSelecionados(){
         button.classList.remove('button');
         button.classList.add('button-selecionado');
         button.innerHTML = "Fechar Pedido";
+        button.disabled = false;
     }
 }
 function fecharPedido(){
+    
     let itensSelecionados = document.querySelectorAll('.selecionado');
     let total = 0;
     let mensagem = "Olá, gostaria de fazer o pedido:\n\n";

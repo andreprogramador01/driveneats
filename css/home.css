@@ -56,7 +56,22 @@ body{
 .item img{
     width:144px;
     height:87px;
+    border-radius: 4px;
 }
+.rodape-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ion-icon{
+    display: none;
+}
+.selecionado ion-icon{
+    color:#32B72F;
+    display: inline;
+}
+
+
 .nome{
     font-family: 'Roboto';
     font-style: normal;
@@ -90,7 +105,7 @@ body{
     margin-top:92px;
 }
 .secao-sobremesa{
-    margin-bottom:108px;
+    margin-bottom:118px;
 }
 .secao-finalizar{
     position:fixed;
